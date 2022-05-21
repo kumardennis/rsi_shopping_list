@@ -1,0 +1,46 @@
+@import "vars.scss";
+
+.offer-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  box-shadow: 0 0 10px 10px lightgray;
+  border-radius: 1rem;
+  padding: 3rem;
+  background: linear-gradient(45deg, white 90%, $primary-color 10%);
+  transition-duration: 0.2s;
+
+  @media (max-width: $mobile-size) {
+    flex-direction: column;
+
+    &:nth-of-type(even) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .offer-content {
+    .offer-title > a {
+      font-size: 50px;
+      color: $primary-color;
+    }
+
+    .offer-description {
+      font-size: 25px;
+    }
+  }
+
+  .offer-image > img {
+    width: 450px;
+    border-radius: 1rem;
+    margin: 3rem;
+
+    @media (max-width: $mobile-size) {
+      width: 250px;
+    }
+  }
+}

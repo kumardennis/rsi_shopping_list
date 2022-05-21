@@ -1,0 +1,13 @@
+@import "vars.scss";
+
+.ant-list-item {
+  display: flex;
+  justify-content: center;
+
+  .delete-icon {
+    font-size: 30px;
+    padding: 1rem;
+    color: $danger-color;
+    cursor: pointer;
+  }
+}
